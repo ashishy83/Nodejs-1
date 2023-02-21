@@ -9,7 +9,7 @@ const server = http.createServer((req,res)=>{
         res.end();
     }
     else if(req.method === 'GET' && req.url === '/contactus'){
-        res.write('abcdddd...........');
+        res.write(JSON.stringify('[1,2,5,7'));
         // res.render('<h1>THis is h1 tag</h1>')
         res.end();
     }
